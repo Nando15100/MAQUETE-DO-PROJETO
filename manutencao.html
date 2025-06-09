@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manutenção de Registros</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+      background-color: teal;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      color: #ccc;
+      border: 2px;
+      
+    }
+
+    th, td {
+      border: 1px solid #bbbec4fd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: rgb(255,198,0);
+      color: black;
+    }
+
+    .icon {
+      cursor: pointer;
+      margin: 0 5px;
+    }
+
+    .teal-navbar {
+      background-color: teal;
+      padding: 10px;
+      color: white;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .teal-navbar a {
+      margin-right: 50px;
+      background-color: crimson;
+      color: white;
+      padding: 6px 12px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .teal-navbar span {
+      margin-left: 5px;
+      font-weight: bold;
+    }
+
+    .spacer {
+      margin-top: 60px;
+    }
+
+     h2 {
+      color: white;
+      text-align: center;
+    }
+
+    .box-search {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .box-search input {
+      width: 400px;
+      height: 36px;
+      border: 1px solid #444;
+      border-top-left-radius: 18px;
+      border-bottom-left-radius: 18px;
+      padding: 0 12px;
+      font-size: 1rem;
+      outline: none;
+    }
+    .box-search button {
+      height: 38px;
+      border: 1px solid #444;
+      border-left: none;
+      border-top-right-radius: 18px;
+      border-bottom-right-radius: 18px;
+      background-color: teal;
+      color: white;
+      padding: 0 15px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .box-search button:hover {
+      background-color: #006666;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="teal-navbar">
+    <span>BANCO DE DADOS AVANÇADO</span>
+    <a href="index.html" onclick="return confirmarSaida()">Sair</a>
+  </nav>
+
+  <div class="spacer"></div>
+
+  <h2>Registros Cadastrados</h2>
+
+  <br>
+  <div class="box-search">
+    <input type="search" id="pesquisar" placeholder="Pesquisar por nome" />
+    <button onclick="searchData()">🔍</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome_INPUT1</th>
+        <th>Nome_INPUT2</th>
+        <th>Nome_INPUT3</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="corpo-tabela">
+      <!-- Linhas serão inseridas via JS -->
+    </tbody>
+  </table>
+
+  <script>
+
+
+
+  </script>
+
+</body>
+</html>
